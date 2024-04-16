@@ -4,4 +4,7 @@
 # Package Files
 node_modules/
 .DS_Store
-/public/
+public/
+
+node_modules
+.env
