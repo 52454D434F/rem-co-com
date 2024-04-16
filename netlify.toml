@@ -1,17 +1,17 @@
 # example netlify.toml
 [build]
   command = "hugo"
-  functions = "netlify/functions"
+  #functions = "netlify/functions"
   publish = "public"
 
 [build.environment]
   HUGO_VERSION = "0.124.1"
 
-[[plugins]]
-  package = "netlify-plugin-cypress"
+# [[plugins]]
+#   package = "netlify-plugin-cypress"
 
-  [plugins.inputs.postBuild]
-    enable = true
+#   [plugins.inputs.postBuild]
+#     enable = true
 
-  [plugins.inputs]
-    enable = false
+#   [plugins.inputs]
+#     enable = false
