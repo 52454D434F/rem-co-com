@@ -14,4 +14,3 @@ categories = [
 
 ## Visiting Nashville, Tennessee, is famously nicknamed 'Music City'. This nickname reflects its rich history and ongoing significance in the music industry, particularly for country music.
 
-{{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
