@@ -1,0 +1,19 @@
+{
+  "site_title": "tietel",
+  "posts": {
+    "front_limit": 4,
+    "author": "Huh"
+  },
+  "sections": [
+    {
+      "type": "carousel",
+      "header": "Image Gallery",
+      "template": "carousel.html",
+      "images": [
+        "/images/uploads/81nglr8xjll._ac_sl1500_.jpg",
+        "/images/uploads/a0285328057_10.jpg",
+        "/images/uploads/a3438586037_10.jpg"
+      ]
+    }
+  ]
+}
