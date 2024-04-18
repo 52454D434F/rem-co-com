@@ -27,7 +27,6 @@ collections:
       field: layout
       value: post
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "gallery" }
       - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Featured Image",
@@ -59,6 +58,13 @@ collections:
           value_field: "title",
           required: false,
         }
+      - { 
+        label: "Layout", 
+        name: "layout", 
+        widget: "select", 
+        default: "post",
+        options: ["post", "gallery"]
+        }
     # use dot notation for nested fields
     sortable_fields: ["title", "commit_date"]
 
@@ -79,7 +85,6 @@ collections:
       field: layout
       value: gallery
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Featured Image",
@@ -111,6 +116,13 @@ collections:
           display_fields: ["title"],
           value_field: "title",
           required: false,
+        }
+      - { 
+        label: "Layout", 
+        name: "layout", 
+        widget: "select", 
+        default: "gallery",
+        options: ["post", "gallery"]
         }
     # use dot notation for nested fields
     sortable_fields: ["title", "commit_date"]
