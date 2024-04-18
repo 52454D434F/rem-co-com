@@ -14,11 +14,13 @@ categories = [
 
 ## Visiting 🗽 for a few days
 
-{{< lb-gallery >}}
-![ROSE](images/2024-NY-3842.png)
-![ROSE](images/2024-NY-3845.png)
-![ROSE](images/2024-NY-3847.png)
-![ROSE](images/2024-NY-3849.png)
-![ROSE](images/2024-NY-3851.png)
-![ROSE](images/2024-NY-3852.png)
-{{< /lb-gallery >}}
+{{< gallery hover-effect="zoom" caption-effect="fade" >}}
+    {{< figure src="images/2024-NY-3842.png" >}}
+    {{< figure src="images/2024-NY-3845.png" >}}
+    {{< figure src="images/2024-NY-3847.png" >}}
+    {{< figure src="images/2024-NY-3849.png" >}}
+    {{< figure src="images/2024-NY-3851.png" >}}
+    {{< figure src="images/2024-NY-3852.png" >}}
+{{< /gallery >}}
+
+{{< load-photoswipe >}}
