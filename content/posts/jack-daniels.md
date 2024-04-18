@@ -23,3 +23,4 @@ description: ""
 
 ## 🥃 Lynchburg, Tennessee
 
+{{< gallery caption-position="none" >}}{{< /gallery >}}{{< load-photoswipe >}}
