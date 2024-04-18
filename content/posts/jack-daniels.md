@@ -17,9 +17,11 @@ gallery:
 date: 2018-08-19T20:46:34.000Z
 categories:
   - Traveling
-tags: []
+tags:
+  - Tennessee
 description: ""
 ---
 
 ## 🥃 Lynchburg, Tennessee
 
+{{< gallery caption-position="none" >}}{{< /gallery >}}{{< load-photoswipe >}}
