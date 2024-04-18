@@ -1,5 +1,5 @@
 # when using the default proxy server port
-#local_backend: true
+local_backend: true
 
 backend:
   name: git-gateway
@@ -9,10 +9,8 @@ backend:
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
-
-
 collections:
-  - name: "Post" # Used in routes, e.g., /admin/collections/blog
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
     label: "Posts" # Used in the UI
     folder: "content/posts" # The path to the folder where the documents are stored
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -22,90 +20,136 @@ collections:
       - label: Year
         field: date
         pattern: \d{4}
+    #format: 'yaml'
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "image", widget: "image", required: true }
-      - { 
-        name: 'Tags', 
-        widget: relation, 
-        collection: "posts", 
-        multiple: true, 
-        search_fields: [ 'title' ], 
-        display_fields: [ 'title' ], 
-        value_field: "{{title}}"
+      - {
+          label: "Featured Image",
+          name: "image",
+          widget: "image",
+          required: false,
+        }
+      - {
+          label: "Categories",
+          name: "categories",
+          widget: "relation",
+          collection: "categories",
+          multiple: true,
+          search_fields: ["title"],
+          display_fields: ["title"],
+          value_field: "title",
+          required: false,
+        }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "relation",
+          collection: "tags",
+          multiple: true,
+          search_fields: ["title"],
+          display_fields: ["title"],
+          value_field: "title",
+          required: false,
         }
       - { label: "Body", name: "body", widget: "markdown" }
     # use dot notation for nested fields
-    sortable_fields: ['title', 'commit_date']
+    sortable_fields: ["title", "commit_date"]
 
-  - name: "Label" # Used in routes, e.g., /admin/collections/blog
-    label: "Labels" # Used in the UI
+  - name: "tags" # Used in routes, e.g., /admin/collections/blog
+    label: "Tag" # Used in the UI
     folder: "content/labels" # The path to the folder where the documents are stored
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     create: true # Allow users to create new documents in this collection
     editor:
       preview: false
-    view_groups:
-      - label: Year
-        field: date
-        pattern: \d{4}
     fields: # The fields for each document, usually in front matter
       - { label: "Tag", name: "title", widget: "string" }
-    # use dot notation for nested fields
-    sortable_fields: ['title', 'commit_date']
 
-  - name: 'settings'
-    label: 'Settings'
+  - name: "categories" # Used in routes, e.g., /admin/collections/blog
+    label: "Category" # Used in the UI
+    folder: "content/categories" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    editor:
+      preview: false
+    fields: # The fields for each document, usually in front matter
+      - { label: "Category", name: "title", widget: "string" }
+
+  - name: "settings"
+    label: "Setting"
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false
     files:
-      - name: 'general'
-        label: 'Site Settings'
-        file: '_data/settings.json'
-        description: 'General Site Settings'
+      - name: "general"
+        label: "Site Settings"
+        file: "_data/settings.json"
+        description: "General Site Settings"
         fields:
-          - { label: 'Global title', name: 'site_title', widget: 'string' }
-          - label: 'Post Settings'
+          - { label: "Global title", name: "site_title", widget: "string" }
+          - label: "Post Settings"
             name: posts
-            widget: 'object'
+            widget: "object"
             fields:
               - {
-                  label: 'Number of posts on frontpage',
+                  label: "Number of posts on frontpage",
                   name: front_limit,
                   widget: number,
                   min: 1,
                   max: 10,
                 }
-              - { label: 'Default Author', name: author, widget: string }
+              - { label: "Default Author", name: author, widget: string }
               - {
-                  label: 'Default Thumbnail',
+                  label: "Default Thumbnail",
                   name: thumb,
                   widget: image,
-                  class: 'thumb',
+                  class: "thumb",
                   required: false,
                 }
-          - label: 'Home Section'
-            name: 'sections'
-            widget: 'list'
+          - label: "Home Section"
+            name: "sections"
+            widget: "list"
             types:
-              - label: 'Carousel'
-                name: 'carousel'
+              - label: "Carousel"
+                name: "carousel"
                 widget: object
-                summary: '{{fields.header}}'
+                summary: "{{fields.header}}"
                 fields:
-                  - { label: Header, name: header, widget: string, default: 'Image Gallery' }
-                  - { label: Template, name: template, widget: string, default: 'carousel.html' }
+                  - {
+                      label: Header,
+                      name: header,
+                      widget: string,
+                      default: "Image Gallery",
+                    }
+                  - {
+                      label: Template,
+                      name: template,
+                      widget: string,
+                      default: "carousel.html",
+                    }
                   - label: Images
                     name: images
                     widget: list
                     field: { label: Image, name: image, widget: image }
-              - label: 'Spotlight'
-                name: 'spotlight'
+              - label: "Spotlight"
+                name: "spotlight"
                 widget: object
                 fields:
-                  - { label: Header, name: header, widget: string, default: 'Spotlight' }
-                  - { label: Template, name: template, widget: string, default: 'spotlight.html' }
-                  - { label: Text, name: text, widget: text, default: 'Hello World' }
+                  - {
+                      label: Header,
+                      name: header,
+                      widget: string,
+                      default: "Spotlight",
+                    }
+                  - {
+                      label: Template,
+                      name: template,
+                      widget: string,
+                      default: "spotlight.html",
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: text,
+                      default: "Hello World",
+                    }
