@@ -20,7 +20,6 @@ collections:
       - label: Year
         field: date
         pattern: \d{4}
-    format: 'yaml'
     editor:
       preview: false
     filter:
@@ -78,7 +77,6 @@ collections:
       - label: Year
         field: date
         pattern: \d{4}
-    format: 'yaml'
     editor:
       preview: false
     filter:
@@ -140,7 +138,6 @@ collections:
     label: "Category" # Used in the UI
     folder: "content/categories" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    format: 'yaml'
     editor:
       preview: false
     fields: # The fields for each document, usually in front matter
@@ -149,7 +146,6 @@ collections:
   - name: "settings"
     label: "Setting"
     delete: false # Prevent users from deleting documents in this collection
-    format: 'yaml'
     editor:
       preview: false
     files:

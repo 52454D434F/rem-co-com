@@ -12,4 +12,3 @@ categories = [
 +++
 
 ## Visiting Philadelphia, Washington and Atlantic City
-
