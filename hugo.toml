@@ -1,6 +1,6 @@
 theme = 'newsroom'
 # does this works
-baseURL = '/'
+baseURL = ''
 languageCode = 'en-us'
 title = 'REM.CO.com'
 #ignoreFiles = ["^/content/categories/.*$", "^/content/labels/.*$"]# excluding my category and label pages for the build
