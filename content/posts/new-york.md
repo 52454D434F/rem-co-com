@@ -9,8 +9,10 @@ gallery:
   - /images/uploads/2024-NY-3851.png
   - /images/uploads/2024-NY-3852.png
 date: 2024-04-09T20:46:34.000Z
-categories: []
-tags: []
+categories:
+  - Traveling
+tags:
+  - United States
 layout: gallery
 description: ""
 ---

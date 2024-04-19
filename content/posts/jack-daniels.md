@@ -1,5 +1,4 @@
 ---
-layout: gallery
 title: Jack Daniel's distillery
 image: /images/uploads/jack-daniels-4168.png
 gallery:
@@ -18,7 +17,8 @@ date: 2018-08-19T20:46:34.000Z
 categories:
   - Traveling
 tags:
-  - Tennessee
+  - United States
+layout: gallery
 description: ""
 ---
 

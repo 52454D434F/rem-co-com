@@ -1,14 +1,14 @@
-+++
-layout = "gallery"
-title = "Philly, DC and America's Playground"
-date = 2024-04-05T23:40:46-04:00
-image = "/uploads/2024-PA-DC-ACY-3793.png"
-tags = [
-"Philadelphia","Washington DC","Atlantic City"
-]
-categories = [
-"Traveling",
-]
-+++
+---
+title: Philly, DC and America's Playground
+image: /images/uploads/2024-pa-dc-acy-3793.png
+gallery:
+  - /images/uploads/2024-pa-dc-acy-3793.png
+date: 2024-04-06T03:40:46.000Z
+categories:
+  - Traveling
+tags:
+  - United States
+layout: gallery
+---
 
 ## Visiting Philadelphia, Washington and Atlantic City
