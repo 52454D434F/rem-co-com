@@ -6,7 +6,7 @@ date = 2024-04-09T20:07:20-04:00
 image = "/uploads/2024-NY-3996.png"
 description = ""
 tags = [
-"United States",
+"New York",
 ]
 categories = [
 "Traveling",
