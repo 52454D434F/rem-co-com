@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: gallery
 author: Remco
 title: Music City
 image: uploads/IMG_4094.png
