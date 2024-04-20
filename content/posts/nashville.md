@@ -3,6 +3,11 @@ layout: gallery
 author: Remco
 title: Music City
 image: uploads/IMG_4094.png
+gallery:
+  - /images/uploads/IMG_4034.png
+  - /images/uploads/IMG_4043.png
+  - /images/uploads/IMG_4046.png
+  - /images/uploads/IMG_4047.png
 date: 2018-08-18T00:07:20.000Z
 categories:
   - Traveling
