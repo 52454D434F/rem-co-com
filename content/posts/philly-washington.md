@@ -32,3 +32,5 @@ layout: gallery
 ---
 
 ## Visiting Philadelphia, Washington and Atlantic City
+
+{{< gallery caption-position="none" >}}{{< /gallery >}}{{< load-photoswipe >}}

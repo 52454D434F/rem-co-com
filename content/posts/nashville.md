@@ -45,3 +45,4 @@ description: Nashville, Tennessee, is famously nicknamed 'Music City.' This
 
 ## Visiting Nashville, Tennessee, is famously nicknamed 'Music City'. This nickname reflects its rich history and ongoing significance in the music industry, particularly for country music.
 
+{{< gallery caption-position="none" >}}{{< /gallery >}}{{< load-photoswipe >}}
