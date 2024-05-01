@@ -1,5 +1,5 @@
 ---
-title: Manhattan & Long Beach
+title: 🇺🇸 Manhattan & Long Beach
 image: /uploads/2024-NY-3996.png
 gallery:
   - /images/uploads/2024-NY-3842.png

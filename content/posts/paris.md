@@ -1,5 +1,5 @@
 ---
-title: Paris
+title: 🇫🇷 Paris
 image: /images/uploads/2017-paris-0833.png
 gallery:
  - /images/uploads/2017-paris-0747.png

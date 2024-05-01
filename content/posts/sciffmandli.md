@@ -1,5 +1,5 @@
 ---
-title: rheinfall
+title: 🇨🇭 rheinfall
 image: /images/uploads/rheinfall-1223.png
 gallery:
  - /images/uploads/rheinfall-1223.png

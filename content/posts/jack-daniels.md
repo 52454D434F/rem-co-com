@@ -1,5 +1,5 @@
 ---
-title: Jack Daniel's distillery
+title: 🇺🇸 Jack Daniel's distillery
 image: /images/uploads/jack-daniels-4168.png
 gallery:
   - /images/uploads/jack-daniels-4139.png

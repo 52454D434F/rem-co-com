@@ -1,5 +1,5 @@
 ---
-title: Philly, DC and America's Playground
+title: 🇺🇸 Philly, DC and America's Playground
 image: /images/uploads/2024-pa-dc-acy-3793.png
 gallery:
   - /images/uploads/2024-PA-DC-ACY-3729.png

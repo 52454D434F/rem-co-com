@@ -1,7 +1,7 @@
 ---
 layout: gallery
 author: Remco
-title: Music City
+title: 🇺🇸 Music City
 image: uploads/nashville-4094.png
 gallery:
   - /images/uploads/nashville-4034.png
